@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.jiang.iocxutil.annotion.ContentView;
 import com.jiang.iocxutil.annotion.OnClick;
+import com.jiang.iocxutil.annotion.OnLongClick;
 import com.jiang.iocxutil.annotion.ViewInject;
 
 /**
@@ -39,12 +40,24 @@ public class MainActivity extends BaseActivity {
 //
 //            }
 //        });
+
+//        textView.setOnLongClickListener(new View.OnLongClickListener() {
+//            @Override
+//            public boolean onLongClick(View v) {
+//                return false;
+//            }
+//        });
     }
 
 
-    @OnClick(R.id.text_ioc)
-    public void click(View view){
+//    @OnClick(R.id.text_ioc)
+//    public void click(View view){
+//        toast("测试点击");
+//    }
+    @OnLongClick(R.id.text_ioc)
+    public boolean click(View view){
         toast("测试点击");
+        return false;
     }
 
     public void toast(String string) {

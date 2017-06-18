@@ -9,13 +9,6 @@ import java.lang.annotation.Target;
  * Created by jiang on 2017/6/17.
  */
 
-//@Target(ElementType.TYPE)
-//@Retention(RetentionPolicy.RUNTIME)
-//public @interface ContentView {
-//    int value();
-//}
-
-
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ContentView
