@@ -33,6 +33,7 @@ public class MainActivity extends BaseActivity {
     protected void onResume() {
         super.onResume();
         Log.d(TAG, "textView ==" + textView.hashCode());
+    }
 
 //        textView.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -47,15 +48,15 @@ public class MainActivity extends BaseActivity {
 //                return false;
 //            }
 //        });
+
+
+
+    @OnClick(R.id.text_ioc)
+    public void click(View view){
+        toast("测试点击");
     }
-
-
-//    @OnClick(R.id.text_ioc)
-//    public void click(View view){
-//        toast("测试点击");
-//    }
     @OnLongClick(R.id.text_ioc)
-    public boolean click(View view){
+    public boolean longLlick(View view){
         toast("测试点击");
         return false;
     }

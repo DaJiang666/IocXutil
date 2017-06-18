@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * Created by jiang on 2017/6/17.
- *
+ * 注入控件注解
  */
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)

@@ -9,6 +9,7 @@ import java.lang.annotation.Target;
 
 /**
  * Created by jiang on 2017/6/17.
+ * 长按事件的注解
  */
 @EventBase(listenerSetter = "setOnLongClickListener"
         , listenerType = View.OnLongClickListener.class

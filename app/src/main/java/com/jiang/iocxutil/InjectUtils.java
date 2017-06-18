@@ -17,12 +17,16 @@ import java.util.Map;
 
 /**
  * Created by jiang on 2017/6/17.
+ * 依赖注入工具类、
+ * 分别为注入布局
+ * 注入控件
+ * 注入事件
  */
 
 public class InjectUtils {
 
     /**
-     *
+     * 初始化注入
      * @param context
      */
     public static void inject(Context context) {
@@ -32,7 +36,7 @@ public class InjectUtils {
     }
 
     /**
-     * 依赖注入
+     * 依赖注入控件
      * @param context
      */
     public static void injectView(Context context) {
@@ -61,6 +65,10 @@ public class InjectUtils {
         }
     }
 
+    /**
+     * 注入布局
+     * @param context
+     */
     public static void injectLayout(Context context) {
         Class<?> clazz =  context.getClass();
         ContentView contentView = clazz.getAnnotation(ContentView.class);
